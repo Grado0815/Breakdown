@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Template/Scenes 2/SampleScene.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/Roll-A-Ball.unity
+    guid: 5f20f8cda171943c896d0f08c21d252d
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 03b58ecd80bdc42c28f91cd02d39a9b3
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 26942718a24d34aafa863599bdde49d7,
+      type: 2}
