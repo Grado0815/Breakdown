@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using Debug = UnityEngine.Debug;
+using UnityEngine.SceneManagement;
 using UnityEngine.Animations;
 
 public class PlayerController : MonoBehaviour
@@ -80,6 +81,8 @@ public class PlayerController : MonoBehaviour
         if (rb.position.y < -1f)
         {
             Debug.Log( message: "GAME OVER!"); // SAME AS FOR COLLIDING WITH ENEMIES
+            StartCoroutine(restartAfterALittleBit());
+           
 
         }
     }
@@ -104,14 +107,14 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Enemy"))
         {
-            // works only in Unity Development Environment
-            Debug.Log( message: "GAME OVER!");
+            Debug.Log( message: "GAME OVER!"); // SAME AS FOR COLLIDING WITH ENEMIES
+            Restart();
             
             
             //yield return new WaitForSeconds(5);
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
             UnityEditor.EditorApplication.ExitPlaymode();
-#endif
+#endif*/
             // works only with built Apps
             // Application.Quit();
         }
@@ -127,5 +130,16 @@ public class PlayerController : MonoBehaviour
 #endif
     }
     
+    public IEnumerator restartAfterALittleBit()
+    {
+        yield return new WaitForSeconds(5); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
+        Restart();
+    }
+
+    
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     
 }
