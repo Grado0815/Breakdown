@@ -79,12 +79,8 @@ public class PlayerController : MonoBehaviour
 
         if (rb.position.y < -1f)
         {
-            if (gameHasEnded == false)
-            {
-                gameHasEnded = true;
-                Debug.Log( message: "GAME OVER!"); // SAME AS FOR COLLIDING WITH ENEMIES
-            }
-            
+            Debug.Log( message: "GAME OVER!"); // SAME AS FOR COLLIDING WITH ENEMIES
+
         }
     }
     private void OnTriggerEnter(Collider other)
