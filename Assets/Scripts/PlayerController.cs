@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 1f;
     public TextMeshProUGUI countText;
     
-    public GameObject winTextObject;
+    //public GameObject winTextObject;
+    public GameObject completeLevelUI;
     
     
     //Rigidbody variable privat (isolated)
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
       
         
         //only display, if the player completed the game
-        winTextObject.SetActive(false);
+       // winTextObject.SetActive(false);
         
         
     }
@@ -63,8 +64,8 @@ public class PlayerController : MonoBehaviour
         //if counter number higher than 12 - show Text "You Win!"
         if (count >= 3) // CHANGE THIS TO 13 AGAIN
         {
-            winTextObject.SetActive(true);
-            StartCoroutine(waitALittleBit());
+           // winTextObject.SetActive(true);
+            StartCoroutine(waitAfterWinning());
             // After 5 seconds: Start next level or go back to main menu
         }
     }
@@ -122,24 +123,32 @@ public class PlayerController : MonoBehaviour
     
     }
     
-    public IEnumerator waitALittleBit()
+    /*public IEnumerator waitALittleBit()
     {
         yield return new WaitForSeconds(5); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
 #if UNITY_EDITOR //the following code is only included in the unity editor
         UnityEditor.EditorApplication.ExitPlaymode();//exits the playmode
 #endif
-    }
+    }*/
     
     public IEnumerator restartAfterALittleBit()
     {
         yield return new WaitForSeconds(2); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
         Restart();
     }
-
+    public IEnumerator waitAfterWinning()
+    {
+        yield return new WaitForSeconds(1); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
+        CompleteLevel();
+    }
     
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
+    public void CompleteLevel()
+    {
+        completeLevelUI.SetActive(true);
+    }
 }
