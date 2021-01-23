@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
         movementX = movementVector.x;
         movementY = movementVector.y;
+        
     }
 
     void SetCountText()
@@ -65,8 +66,10 @@ public class PlayerController : MonoBehaviour
         if (count >= 3) // CHANGE THIS TO 13 AGAIN
         {
            // winTextObject.SetActive(true);
-            StartCoroutine(waitAfterWinning());
+            StartCoroutine(WaitAfterWinning());
             // After 5 seconds: Start next level or go back to main menu
+            //This screen should stay until something is selected, but it vanishes after a few secoonds
+
         }
     }
 
@@ -82,7 +85,7 @@ public class PlayerController : MonoBehaviour
         if (rb.position.y < -1f)
         {
             Debug.Log( message: "GAME OVER!"); // SAME AS FOR COLLIDING WITH ENEMIES
-            StartCoroutine(restartAfterALittleBit());
+            StartCoroutine(RestartAfterALittleBit());
            
 
         }
@@ -131,15 +134,16 @@ public class PlayerController : MonoBehaviour
 #endif
     }*/
     
-    public IEnumerator restartAfterALittleBit()
+    private IEnumerator RestartAfterALittleBit()
     {
         yield return new WaitForSeconds(2); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
         Restart();
     }
-    public IEnumerator waitAfterWinning()
+    private IEnumerator WaitAfterWinning()
     {
-        yield return new WaitForSeconds(1); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
+        yield return new WaitForSeconds(1); 
         CompleteLevel();
+        
     }
     
     void Restart()
@@ -147,8 +151,9 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
-    public void CompleteLevel()
+    private void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
+        //This screen should stay until something is selected, but it vanishes after a few secoonds
     }
 }
