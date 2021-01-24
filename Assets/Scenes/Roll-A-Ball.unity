@@ -25677,7 +25677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b390801b999b4314a2c7551aa4563dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  address: /*/touch0
+  address: /*/gravity
   receiver: {fileID: 342304003}
   playerController: {fileID: 279971894}
 --- !u!114 &342304003 stripped

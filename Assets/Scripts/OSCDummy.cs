@@ -25,8 +25,17 @@ public class OSCDummy : MonoBehaviour
     private void ReceivedMessage(OSCMessage message)
     {
         //Debug.Log(message.ToVector2Double(out touch));
+        Vector2 touch;
+        Quaternion rotation;
 
-        if (message.ToVector2(out var touch) == true)
+
+        if (message.ToQuaternion(out rotation))
+        {
+            Debug.Log(rotation);
+        }
+        
+        
+        if (message.ToVector2(out touch) == true)
         {
             playerController.OnMoveVector2(touch);
             Debug.Log(touch);

@@ -4,18 +4,14 @@
     <list default="true" id="fb38049d-dd03-4d5f-a577-93027410d7cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Breakdown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Breakdown/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSCDummy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSCDummy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/extOSC/Examples/01) Getting Started/Scripts/SimpleMessageReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/extOSC/Examples/01) Getting Started/Scripts/SimpleMessageReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/extOSC/Scripts/OSCUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/extOSC/Scripts/OSCUtilities.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/extOSC.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/extOSC.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/extOSC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/extOSC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/extOSC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/extOSC.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/46b7a0-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/46b7a0-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extOSC/Debug/New Debug Packet.eod" beforeDir="false" afterPath="$PROJECT_DIR$/extOSC/Debug/New Debug Packet.eod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extOSC/logs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/extOSC/logs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
