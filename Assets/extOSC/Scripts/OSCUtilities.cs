@@ -349,7 +349,7 @@ namespace extOSC
 
 		public static bool ToVector2Double(this OSCMessage message, out Vector2 value)
 		{
-			var values = message.FindValues(OSCValueType.Float);
+			var values = message.FindValues(OSCValueType.Double);
 			if (values.Length >= 2)
 			{
 				var firstValue = values[0];

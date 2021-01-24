@@ -4,14 +4,14 @@ using UnityEngine;
 using extOSC;
 using UnityEngine.Serialization;
 
+//using UnityEngine.Serialization;
+
 public class OSCDummy : MonoBehaviour
 {
-    public string Address = "/example/1";
-    //[FormerlySerializedAs("Address")] public string address = "/example/1";
+    [FormerlySerializedAs("Address")] public string address = "/*/touch0";
 
-    //[Header("OSC Settings")]
-    public OSCReceiver Receiver;
-
+    [FormerlySerializedAs("Receiver")] [Header("OSC Settings")]
+    public OSCReceiver receiver;
     //Player controller
 
     public PlayerController playerController;
@@ -19,20 +19,20 @@ public class OSCDummy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Receiver.Bind(Address, ReceivedMessage);  
+        receiver.Bind(address, ReceivedMessage);  
     }
 
     private void ReceivedMessage(OSCMessage message)
     {
-        Vector2 touch;
-        Debug.Log(message.ToVector2Double(out touch));
+        //Debug.Log(message.ToVector2Double(out touch));
 
-        if (message.ToVector2Double(out touch) == true)
+        if (message.ToVector2Double(out var touch) == true)
         {
+            playerController.OnMoveVector2(touch);
             Debug.Log(touch);
         }
         
-        //Debug.LogFormat("Received: {0}", message); 
+        Debug.LogFormat("Received: {0}", message); 
         
     }
     // Update is called once per frame

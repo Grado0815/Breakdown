@@ -1,25 +1,26 @@
 ﻿/* Copyright (c) 2020 ExT (V.Sigalkin) */
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace extOSC.Examples
+namespace extOSC.Examples.Scripts
 {
 	public class SimpleMessageReceiver : MonoBehaviour
 	{
 		#region Public Vars
 
-		public string Address = "/example/1";
+		[FormerlySerializedAs("Address")] public string address = "/*/*";
 
-		[Header("OSC Settings")]
-		public OSCReceiver Receiver;
+		[FormerlySerializedAs("Receiver")] [Header("OSC Settings")]
+		public OSCReceiver receiver;
 
 		#endregion
 
 		#region Unity Methods
 
-		protected virtual void Start()
+		private void Start()
 		{
-			Receiver.Bind(Address, ReceivedMessage);
+			receiver.Bind(address, ReceivedMessage);
 		}
 
 		#endregion

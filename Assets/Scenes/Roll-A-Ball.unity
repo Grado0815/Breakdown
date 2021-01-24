@@ -25677,8 +25677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b390801b999b4314a2c7551aa4563dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Address: '*/*/'
-  Receiver: {fileID: 342304003}
+  address: /*/touch0
+  receiver: {fileID: 342304003}
   playerController: {fileID: 279971894}
 --- !u!114 &342304003 stripped
 MonoBehaviour:
@@ -25692,6 +25692,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbba286dc10e549b2bdec947ef8dbd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &342304005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342304001}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464088183d2a1484ab8fb64e356c9f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConnect: 1
+  _closeOnPause: 0
+  _mapBundle: {fileID: 0}
+  _workInEditor: 0
+  _localHostMode: 0
+  _localPortMode: 2
+  _localReceiver: {fileID: 0}
+  _localHost: 192.168.0.206
+  _localPort: 7000
+  _remoteHost: 127.0.0.1
+  _remotePort: 7000
+  _useBundle: 0
 --- !u!1 &416447486
 GameObject:
   m_ObjectHideFlags: 0
@@ -47831,7 +47855,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -91103,6 +91127,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864562980271816024, guid: 4a851311456504c088ecb65cf5fc98e2,
+        type: 3}
+      propertyPath: _workInEditor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6828579167481305784, guid: 4a851311456504c088ecb65cf5fc98e2,
         type: 3}
