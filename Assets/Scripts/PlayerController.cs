@@ -47,10 +47,10 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    void OnMove(InputValue movementValue)
+    void OnMove(InputValue inputValue)
     {
         //Function input parameters
-        Vector2 movementVector = movementValue.Get<Vector2>();
+        var movementVector = inputValue.Get<Vector2>();
 
         movementX = movementVector.x;
         movementY = movementVector.y;

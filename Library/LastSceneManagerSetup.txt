@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Roll-A-Ball.unity
+- path: Assets/extOSC/Examples/02) Value Types/Value Types.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
