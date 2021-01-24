@@ -347,15 +347,15 @@ namespace extOSC
 			return false;
 		}
 
-		public static bool ToVector2Double(this OSCMessage message, out Vector2 value)
+		public static bool ToVector2(this OSCMessage message, out Vector2 value)
 		{
-			var values = message.FindValues(OSCValueType.Double);
+			var values = message.FindValues(OSCValueType.Float);
 			if (values.Length >= 2)
 			{
 				var firstValue = values[0];
 				var secondValue = values[1];
 
-				value = new Vector2(firstValue.doubleValue, secondValue.doubleValue);
+				value = new Vector2(firstValue.floatValue, secondValue.floatValue);
 
 				return true;
 			}

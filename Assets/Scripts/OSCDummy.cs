@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 
 public class OSCDummy : MonoBehaviour
 {
-    [FormerlySerializedAs("Address")] public string address = "/*/touch0";
+    [FormerlySerializedAs("Address")] public string address = $"/*/touch0";
 
     [FormerlySerializedAs("Receiver")] [Header("OSC Settings")]
     public OSCReceiver receiver;
@@ -26,7 +26,7 @@ public class OSCDummy : MonoBehaviour
     {
         //Debug.Log(message.ToVector2Double(out touch));
 
-        if (message.ToVector2Double(out var touch) == true)
+        if (message.ToVector2(out var touch) == true)
         {
             playerController.OnMoveVector2(touch);
             Debug.Log(touch);

@@ -9,7 +9,7 @@ namespace extOSC.Examples.Scripts
 	{
 		#region Public Vars
 
-		[FormerlySerializedAs("Address")] public string address = "/*/*";
+		[FormerlySerializedAs("Address")] public string address = "/*/touch0";
 
 		[FormerlySerializedAs("Receiver")] [Header("OSC Settings")]
 		public OSCReceiver receiver;
