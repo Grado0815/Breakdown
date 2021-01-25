@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
     
     private IEnumerator RestartAfterALittleBit()
     {
-        yield return new WaitForSeconds(2); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
+        yield return new WaitForSeconds(1); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
         Restart();
     }
     private IEnumerator WaitAfterWinning()
