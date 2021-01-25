@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     //public Animator anim;
     public float speed = 1f;
     public TextMeshProUGUI countText;
+    public GameObject completeLevelUI;
 
     //public GameObject winTextObject;
 
@@ -157,5 +158,4 @@ void SetCountText()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
 }
