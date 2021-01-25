@@ -11,6 +11,7 @@ using UnityEngine.Animations;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource tickSource;
     //public Animator anim;
     public float speed = 1f;
     public TextMeshProUGUI countText;
@@ -35,6 +36,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        tickSource = GetComponent <AudioSource> ();
         rb = GetComponent<Rigidbody>();
         count = 0;
         //everytime the count variable is updated
@@ -95,9 +98,13 @@ void SetCountText()
 
         }
     }
+
+    
+
+
     private void OnTriggerEnter(Collider other)
     {
-        
+        tickSource.Play();
         //set Pickup Element to false if collision happen
         if (other.gameObject.CompareTag("PickUp"))
         {
