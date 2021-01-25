@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator WaitAfterWinning()
     {
         yield return new WaitForSeconds(1); 
-        CompleteLevel();
+        FindObjectOfType<GameManager>().CompleteLevel();
         
     }
     
@@ -166,9 +166,9 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
-    private void CompleteLevel()
+   /* private void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
         //This screen should stay until something is selected, but it vanishes after a few secoonds
-    }
+    }*/
 }
