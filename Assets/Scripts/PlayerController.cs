@@ -69,16 +69,18 @@ public class PlayerController : MonoBehaviour
 
 
 
-void SetCountText()
+    void SetCountText()
     {
         countText.text = "Count: " + count.ToString() + " / 13"  ;
-        
+    
         //if counter number higher than 12 - show Text "You Win!"
         if (count >= 3) // CHANGE THIS TO 13 AGAIN
         {
-            //winTextObject.SetActive(true);
-            //StartCoroutine(waitALittleBit());
+            // winTextObject.SetActive(true);
+            StartCoroutine(WaitAfterWinning());
             // After 5 seconds: Start next level or go back to main menu
+            //This screen should stay until something is selected, but it vanishes after a few secoonds
+
         }
     }
 
@@ -94,7 +96,7 @@ void SetCountText()
         if (rb.position.y < -1f)
         {
             Debug.Log( message: "GAME OVER!"); // SAME AS FOR COLLIDING WITH ENEMIES
-            StartCoroutine(restartAfterALittleBit());
+            StartCoroutine(RestartAfterALittleBit());
            
 
         }
@@ -139,19 +141,26 @@ void SetCountText()
     
     }
     
-    public IEnumerator waitALittleBit()
+    /*public IEnumerator waitALittleBit()
     {
         yield return new WaitForSeconds(5); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
 #if UNITY_EDITOR //the following code is only included in the unity editor
         UnityEditor.EditorApplication.ExitPlaymode();//exits the playmode
 #endif
-    }
+    }*/
     
-    public IEnumerator restartAfterALittleBit()
+    private IEnumerator RestartAfterALittleBit()
     {
         yield return new WaitForSeconds(2); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
         Restart();
     }
+    private IEnumerator WaitAfterWinning()
+    {
+        yield return new WaitForSeconds(1); 
+        CompleteLevel();
+        
+    }
+
 
     
     void Restart()
