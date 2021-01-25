@@ -306,6 +306,7 @@
           </e>
           <e p="versions.txt" t="Include" />
         </e>
+        <e p="GameHandler.cs" t="Include" />
         <e p="Samples" t="Include">
           <e p="Input System" t="Include">
             <e p="1.0.0" t="Include">

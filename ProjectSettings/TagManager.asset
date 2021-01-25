@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PickUp
   - Enemy
+  - Collider
   layers:
   - Default
   - TransparentFX

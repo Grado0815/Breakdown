@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-0.0000743865966796875,"y":5.499904632568359,"z":-0.0000057220458984375},"rotation":{"x":0.2618319094181061,"y":0.4729212522506714,"z":-0.14957764744758607,"w":0.8279111385345459},"size":10.0,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":2.341811418533325,"y":12.352411270141602,"z":-11.551011085510254},"rotation":{"x":0.32263749837875368,"y":0.039727889001369479,"z":-0.013566526584327221,"w":0.9456111192703247},"size":4.958984375,"orthographic":false}
+>>>>>>> Sound

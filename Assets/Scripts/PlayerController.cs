@@ -11,6 +11,8 @@ using UnityEngine.Animations;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource collideSound;
+    
     public AudioSource tickSource;
     //public Animator anim;
     public float speed = 1f;
@@ -37,7 +39,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        collideSound = GetComponent<AudioSource>();
         tickSource = GetComponent <AudioSource> ();
         rb = GetComponent<Rigidbody>();
         count = 0;
@@ -107,14 +109,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        tickSource.Play();
+        
         //set Pickup Element to false if collision happen
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
             //if Pickup Element collected set count +1
             count = count + 1;
-            
+            tickSource.Play();
             SetCountText();
 
             /*if (count >= 3)
@@ -137,7 +139,10 @@ public class PlayerController : MonoBehaviour
             // works only with built Apps
             // Application.Quit();
         }
-        
+        else if (other.gameObject.CompareTag("Collider"))
+        {
+            collideSound.Play();
+        }
     
     }
     
