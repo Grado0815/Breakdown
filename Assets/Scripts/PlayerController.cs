@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 1f;
     public TextMeshProUGUI countText;
 
-    public GameObject winTextObject;
+    //public GameObject winTextObject;
 
 
     //Rigidbody variable privat (isolated)
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
 
         //only display, if the player completed the game
-        winTextObject.SetActive(false);
+        //winTextObject.SetActive(false);
 
 
     }
@@ -75,8 +75,8 @@ void SetCountText()
         //if counter number higher than 12 - show Text "You Win!"
         if (count >= 3) // CHANGE THIS TO 13 AGAIN
         {
-            winTextObject.SetActive(true);
-            StartCoroutine(waitALittleBit());
+            //winTextObject.SetActive(true);
+            //StartCoroutine(waitALittleBit());
             // After 5 seconds: Start next level or go back to main menu
         }
     }
