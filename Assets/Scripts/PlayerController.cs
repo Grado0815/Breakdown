@@ -77,9 +77,10 @@ public class PlayerController : MonoBehaviour
         if (count >= 3) // CHANGE THIS TO 13 AGAIN
         {
             // winTextObject.SetActive(true);
-            StartCoroutine(WaitAfterWinning());
-            // After 5 seconds: Start next level or go back to main menu
-            //This screen should stay until something is selected, but it vanishes after a few secoonds
+           // StartCoroutine(WaitAfterWinning());
+           SceneManager.LoadScene(2);
+           // After 5 seconds: Start next level or go back to main menu
+           //This screen should stay until something is selected, but it vanishes after a few secoonds
 
         }
     }
