@@ -160,13 +160,12 @@ public class PlayerController : MonoBehaviour
         CompleteLevel();
         
     }
-
-
     
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    
     private void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
