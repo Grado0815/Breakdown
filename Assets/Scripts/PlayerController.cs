@@ -158,4 +158,9 @@ void SetCountText()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    private void CompleteLevel()
+    {
+        completeLevelUI.SetActive(true);
+        //This screen should stay until something is selected, but it vanishes after a few secoonds
+    }
 }
