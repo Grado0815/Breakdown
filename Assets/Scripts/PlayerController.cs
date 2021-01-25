@@ -14,24 +14,24 @@ public class PlayerController : MonoBehaviour
     //public Animator anim;
     public float speed = 1f;
     public TextMeshProUGUI countText;
-    
+
     public GameObject winTextObject;
-    
-    
+
+
     //Rigidbody variable privat (isolated)
     private Rigidbody rb = null;
-    
+
     //counter of natural numbers
     private int count;
-    
+
     private float movementX;
     private float movementY;
-    
 
 
-    
-    
-    
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,24 +39,33 @@ public class PlayerController : MonoBehaviour
         count = 0;
         //everytime the count variable is updated
         SetCountText();
-      
-        
+
+
         //only display, if the player completed the game
         winTextObject.SetActive(false);
-        
-        
+
+
     }
 
-    void OnMove(InputValue movementValue)
+    void OnMove(InputValue inputValue)
     {
         //Function input parameters
-        Vector2 movementVector = movementValue.Get<Vector2>();
+        var movementVector = inputValue.Get<Vector2>();
 
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
 
-    void SetCountText()
+    public void OnMoveVector2(Vector2 input)
+    {
+        movementX = input.x;
+        movementY = input.y;
+    }
+
+
+
+
+void SetCountText()
     {
         countText.text = "Count: " + count.ToString() + " / 13"  ;
         

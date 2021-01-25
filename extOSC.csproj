@@ -205,10 +205,10 @@
      <Compile Include="Assets\extOSC\Scripts\UI\OSCSlider.cs" />
      <None Include="Assets\extOSC\Scripts\extOSC.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/alex/Documents/GitHub/Breakdown/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/alex/Downloads/UNITY-GITHUB/Breakdown/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/alex/Documents/GitHub/Breakdown/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/alex/Downloads/UNITY-GITHUB/Breakdown/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -400,7 +400,7 @@
  <HintPath>/Applications/Unity/2019.4.12f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
- <HintPath>/Users/alex/Documents/GitHub/Breakdown/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ <HintPath>/Users/alex/Downloads/UNITY-GITHUB/Breakdown/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
