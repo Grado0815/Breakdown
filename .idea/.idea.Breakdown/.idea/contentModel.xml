@@ -306,6 +306,7 @@
           </e>
           <e p="versions.txt" t="Include" />
         </e>
+        <e p="GameHandler.cs" t="Include" />
         <e p="Samples" t="Include">
           <e p="Input System" t="Include">
             <e p="1.0.0" t="Include">
@@ -331,6 +332,7 @@
           <e p="CameraController.cs" t="Include" />
           <e p="Door.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="OSCDummy.cs" t="Include" />
           <e p="PatrollingEnemyController.cs" t="Include" />
