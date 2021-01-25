@@ -139,21 +139,23 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(2); //CHANGE THIS LATER TO NEXT LEVEL OR QUIT SCREEN
         Restart();
     }
-    private IEnumerator WaitAfterWinning()
-    {
-        yield return new WaitForSeconds(1); 
-        CompleteLevel();
-        
-    }
-    
+
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+  
     
     private void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
         //This screen should stay until something is selected, but it vanishes after a few secoonds
+    }
+    
+    private IEnumerator WaitAfterWinning()
+    {
+        yield return new WaitForSeconds(1); 
+        CompleteLevel();
+        
     }
 }
