@@ -71,10 +71,10 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString() + " / 5"  ;
+        countText.text = "Count: " + count.ToString() + " / 6"  ;
     
         //if counter number higher than 12 - show Text "You Win!"
-        if (count >= 5) 
+        if (count >= 6) 
         {
             // winTextObject.SetActive(true);
            // StartCoroutine(WaitAfterWinning());
