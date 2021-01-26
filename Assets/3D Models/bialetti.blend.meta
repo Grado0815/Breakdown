@@ -14,13 +14,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Polymer
-    second: {fileID: 8343191213810321917, guid: 11f6f0874510e47aab91cae6b4479b96,
-      type: 3}
+    second: {fileID: 2100000, guid: 8fd74d8d431244aaba71b20f08df90ff, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

@@ -3,12 +3,92 @@ guid: e57721f50ab74490abe1d4093f61a3f5
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Branch1_1
+    second: {fileID: 2100000, guid: 95c590e330f3a46eda7c8f2316eb0f8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Branch1_2
+    second: {fileID: 2100000, guid: 1de95502168fe4839b53ac5f956eda86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bush1_1
+    second: {fileID: 2100000, guid: 52bc6b8a35de04d9e81e191ececbe91d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass1_1.001
+    second: {fileID: 2100000, guid: 252470be4afea4ea9a15e4c4664df59b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom3_1
+    second: {fileID: 2100000, guid: f73f9208e0ed9480a889b0b82250f7dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom3_2
+    second: {fileID: 2100000, guid: ba1188e8985324b7abe8de67c1a13502, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom4_1
+    second: {fileID: 2100000, guid: 64c25d404e2cd47e1b5d4079b10ab56f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom4_2
+    second: {fileID: 2100000, guid: 1d4e11f271d6643e986048f8028c0ec3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock1_1
+    second: {fileID: 2100000, guid: 1e2bd6262da8949158d2d089cd86a949, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock1_1.001
+    second: {fileID: 2100000, guid: 94d4a860149084e0db7f4c042ad5215a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump1_1
+    second: {fileID: 2100000, guid: 85060a3f0562046a0b7bb03f3a61a64e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump1_2
+    second: {fileID: 2100000, guid: cf740c3f1bbe544a3911335b6cd49c64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree1
+    second: {fileID: 2100000, guid: 69ba908d88e5f448fafed51f03efb4b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree1_2.001
+    second: {fileID: 2100000, guid: 263c3fc312976431799181f1f6958fa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree3_1.001
+    second: {fileID: 2100000, guid: a388a0ed19e304a818a1505efbc17adc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree3_2.001
+    second: {fileID: 2100000, guid: e1d1e93ccd1b540f5978ff2ea20505ca, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
