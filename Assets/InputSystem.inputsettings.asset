@@ -15,6 +15,7 @@ MonoBehaviour:
   m_SupportedDevices:
   - Touchscreen
   - Keyboard
+  - VirtualMouse
   m_UpdateMode: 2
   m_CompensateForScreenOrientation: 1
   m_FilterNoiseOnCurrent: 0
